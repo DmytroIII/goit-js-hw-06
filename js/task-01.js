@@ -9,13 +9,12 @@ const сategoriesName = document.querySelectorAll('h2');
 const elementsСount = document.querySelectorAll('#categories .item ul');
 
 console.log('Category: ' + [...сategoriesName][0].innerText);
+console.log('Elements: ' + [...elementsСount][0].childElementCount);
 
-console.log('Number of categories: ' + countCategories);
+console.log('Category: ' + [...сategoriesName][1].innerText);
+console.log('Elements: ' + [...elementsСount][1].childElementCount);
 
-const CategoriesName = document.querySelectorAll('h2');
-console.log('Category: ' + [...CategoriesName][0].innerText);
+console.log('Category: ' + [...сategoriesName][2].innerText);
+console.log('Elements: ' + [...elementsСount][2].childElementCount);
 
-const Category = item.querySelector('ul');
-console.log(Category.firstChild);
 
-console.log('Elements: ' + [...CategoriesName][0].innerText);
