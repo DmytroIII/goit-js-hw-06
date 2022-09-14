@@ -1,10 +1,14 @@
 
 
+const сategories = document.querySelectorAll('#categories .item');
+const сategoriesСount = сategories.length;
 
+console.log('Number of categories: ' + сategoriesСount);
 
+const сategoriesName = document.querySelectorAll('h2');
+const elementsСount = document.querySelectorAll('#categories .item ul');
 
-const Categories = document.querySelectorAll('#categories .item');
-const countCategories = Categories.length;
+console.log('Category: ' + [...сategoriesName][0].innerText);
 
 console.log('Number of categories: ' + countCategories);
 
@@ -15,7 +19,3 @@ const Category = item.querySelector('ul');
 console.log(Category.firstChild);
 
 console.log('Elements: ' + [...CategoriesName][0].innerText);
-
-console.log('Category: ' + [...CategoriesName][1].innerText);
-console.log('Category: ' + [...CategoriesName][2].innerText);
-//const CategoriesCount = //
