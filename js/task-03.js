@@ -28,5 +28,6 @@ const element = images.map((imag) => `<li><img src="${imag.url}" alt ="${imag.al
 
 gallery.insertAdjacentHTML("afterbegin", element);
 
-const imagesAll = document.querySelectorAll(".gallery img");
-imagesAll.classImg.add('sliderImg');
+const imgClass = document.querySelector('img');
+imgClass.classList.add('sliderImg');
+
