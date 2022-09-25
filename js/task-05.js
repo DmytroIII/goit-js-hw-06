@@ -1,12 +1,12 @@
 
 
 
-const InsertInput = document.querySelector('#name-input');
-const InsertOutput = document.querySelector('#name-output');
+const insertInput = document.querySelector("#name-input");
+const insertOutput= document.querySelector("#name-output");
 
-InsertInput.addEventListener('input', onInputChange);
-
-function onInputChange(event) { 
-   console.log(event.currentTarget.value);
-   InsertOutput.textContent = event.currentTarget.value;
-}
+insertInput.addEventListener("input", (event) => {
+  insertOutput.textContent = "Anonymous";
+  if (event.currentTarget.value !== "") {
+    insertOutput.textContent = event.currentTarget.value;
+  }
+});
