@@ -2,9 +2,9 @@
 
 
 
-const loginForm = document.querySelector('.login-form').reset();
+const loginForm = document.querySelector('.login-form');
 loginForm.addEventListener('submit', OnSubmit)
-function OnSubmit(evt) {
+function OnSubmit(evt){
     evt.preventDefault()
     console.dir(evt.currentTarget)
      const {email, password} = evt.currentTarget.elements;
@@ -16,6 +16,7 @@ function OnSubmit(evt) {
     if (email.value.trim() === "" || password.value.trim() === "") {
     alert("Вы заполнили не все поля формы!");
   }
-   HTMLFormElement.reset();
-     console.log(data);
+
+  console.log(data);
+  evt.currentTarget.reset();
 }
